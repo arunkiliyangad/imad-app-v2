@@ -18,7 +18,8 @@ body {
 .img-medium {
     height: 200px;
 }
- .container{
+
+.container{
     max-width: 800px;
     margin: 0 auto;
     color: #3b47a0;
