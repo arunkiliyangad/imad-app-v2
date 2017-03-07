@@ -92,6 +92,10 @@ app.get('/article-two', function (req, res) {
 app.get('/article-three', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
+app.get('/counter', function (req, res) {
+    counter=counter+1;
+    res.send(counter.tostring());
+});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
